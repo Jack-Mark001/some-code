@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 :: ===== 配置区域（按需修改） =====
 :: 笔记存放路径（修改成你想要的文件夹）
-set NOTEBOOK_DIR=C:\Users\贾锴\Desktop\知识库\0_感
+set NOTEBOOK_DIR=.\知识库\0_感
 :: Typora 安装路径（根据你的实际路径修改）
 set TYPORA_PATH="D:\software\soft\Typora\Typora.exe"
 :: ===== 配置结束 =====
