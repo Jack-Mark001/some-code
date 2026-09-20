@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../../../resource/picture/icon_music.png</file>
+        <file>../../../../resource/picture/icon_next.png</file>
+        <file>../../../../resource/picture/icon_next_hover.png</file>
+        <file>../../../../resource/picture/icon_pause.png</file>
+        <file>../../../../resource/picture/icon_pause_hover.png</file>
+        <file>../../../../resource/picture/icon_previous.png</file>
+        <file>../../../../resource/picture/icon_previous_hover.png</file>
+        <file>../../../../resource/picture/music.png</file>
+        <file>../../../../resource/picture/music_hover.png</file>
+        <file>../../../../resource/picture/play.png</file>
+        <file>../../../../resource/picture/play_hover.png</file>
+        <file>../../../../resource/picture/full.png</file>
+        <file>../../../../resource/picture/full_hover.png</file>
+        <file>../../../../resource/picture/return.png</file>
+        <file>../../../../resource/picture/return_hover.png</file>
+    </qresource>
+</RCC>

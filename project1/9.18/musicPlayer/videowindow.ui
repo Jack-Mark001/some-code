@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VideoWindow</class>
+ <widget class="QMainWindow" name="VideoWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>201</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_list">
+     <attribute name="title">
+      <string>本地列表</string>
+     </attribute>
+     <widget class="QListWidget" name="local_list">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>201</width>
+        <height>421</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>在线列表</string>
+     </attribute>
+     <widget class="QListWidget" name="online_list">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>201</width>
+        <height>421</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QSlider" name="volume_bar">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>540</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>500</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_play">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>530</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_play[mode=&quot;play&quot;]{border-image: url(:/resource/picture/play.png);}
+
+#btn_play[mode=&quot;play&quot;]:hover{border-image: url(:/resource/picture/play_hover.png);}
+
+#btn_play[mode=&quot;pause&quot;]{border-image: url(:/resource/picture/icon_pause.png);}
+
+#btn_play[mode=&quot;pause&quot;]:hover{border-image: url(:/resource/picture/icon_pause_hover.png);}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_all">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>500</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="volume">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>560</y>
+      <width>69</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_next">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>528</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_next{border-image: url(:/resource/picture/icon_next.png);}
+
+#btn_next:hover{border-image: url(:/resource/picture/icon_next_hover.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pre">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>530</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_pre{border-image: url(:/resource/picture/icon_previous.png);}
+
+#btn_pre:hover{border-image: url(:/resource/picture/icon_previous_hover.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_now">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>500</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSlider" name="progress_bar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>470</y>
+      <width>681</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>571</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="video_window"/>
+   </widget>
+   <widget class="QPushButton" name="btn_full">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>500</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_full{border-image: url(:/resource/picture/full.png);}
+#btn_full:hover{border-image: url(:/resource/picture/full_hover.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_back">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>510</y>
+      <width>40</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_back{border-image: url(:/resource/picture/return.png);}
+#btn_back:hover{border-image: url(:/resource/picture/return_hover.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
